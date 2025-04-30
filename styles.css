@@ -1,0 +1,97 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0faff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+    color: #0077b6;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #0077b6;
+    border-bottom: 2px solid #ade8f4;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h2::before {
+    font-size: 1.2em;
+}
+
+h2:nth-of-type(1)::before { content: "👤"; }
+h2:nth-of-type(2)::before { content: "🧑🏻‍🎓"; }
+h2:nth-of-type(3)::before { content: "🗣️"; }
+h2:nth-of-type(4)::before { content: "📞"; }
+
+p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+
+strong {
+    color: #0096c7;
+}
+
+
+hr {
+    border: 0;
+    height: 2px;
+    background: #ade8f4;
+    margin: 30px 0;
+}
+
+center {
+    margin-top: 20px;
+}
+
+center:last-of-type {
+    margin-top: 40px;
+    font-size: 0.9em;
+    
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
+
