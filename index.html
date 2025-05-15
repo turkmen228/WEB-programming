@@ -1,45 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV-резюме</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV-резюме</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+  <div id="cv-container">
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle" />
+      <span class="slider round"></span>
+    </label>
+
     <center>
-        <h1>Oleksandr Petrenko</h1>
-        <p>Студент групи КБ-306 <p>
+      <h1>Oleksandr Petrenko</h1>
+      <p>Студент групи КБ-306</p>
     </center>
 
     <hr>
     <h2>Skills</h2>
     <ul>
-        <li>Programming</li>
-        <li>Ethical hacking</li>
-        <li>Networking (basic)</li>
-        <li>Front-end (HTML)</li>
+      <li>Programming</li>
+      <li>Ethical hacking</li>
+      <li>Networking (basic)</li>
+      <li>Front-end (HTML)</li>
     </ul>
 
     <h2>Education</h2>
     <ul>
-        <li><b>Sribne secondary school of 1-3 grades </b> - complete secondary education, by 2022</li>
-        <li><b>Lviv polytechnic national university </b> - Cybersecurity, 2022-2026</li>
+      <li><b>Sribne secondary school of 1-3 grades</b> - complete secondary education, by 2022</li>
+      <li><b>Lviv polytechnic national university</b> - Cybersecurity, 2022-2026</li>
     </ul>
 
     <h2>Language</h2>
     <ul>
-        <li>Ukrainian - <b>native</b></li>
-        <li>English - <b>B1</b></li>
+      <li>Ukrainian - <b>native</b></li>
+      <li>English - <b>B1</b></li>
     </ul>
+
     <h2>Contact</h2>
-    <p>Email: oleksandr.petrenko.kb.2022@lpnu.ua </p>
-    <p>Phone Number: +380*******00 </p>
+    <p>Email: oleksandr.petrenko.kb.2022@lpnu.ua</p>
+    <p>Phone Number: +380*******00</p>
+
+    <h2>Feedback</h2>
+    <ul id="feedback-container"></ul>
+    <div style="text-align: center; margin: 30px 0;">
+     <button id="open-feedback-btn">Send feedback</button>
+    </div>
     <hr>
     <center>
-      <p>&lt;<strong> 2025-Петренко Олександр &gt;</p>
+      <p><strong>&lt; 2025-Петренко Олександр &gt;</strong></p>
     </center>
+    <footer id="browser-info" style="margin-top: 20px; font-size: 0.85em;"></footer>
+  </div>
 
-    
+  <div id="feedback-modal" class="modal">
+    <div class="modal-content">
+      <h2>Зворотній зв'язок</h2>
+      <form action="https://formspree.io/f/xrbqregl" method="POST">
+        <label>Ім’я:<br><input type="text" name="name" required></label><br>
+        <label>Email:<br><input type="email" name="email" required></label><br>
+        <label>Телефон:<br><input type="tel" name="phone"></label><br>
+        <label>Повідомлення:<br><textarea name="message" required></textarea></label><br>
+        <button type="submit">Відправити</button>
+        <button type="button" id="cancel-btn">Скасувати</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
