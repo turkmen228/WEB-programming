@@ -7,13 +7,17 @@
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <div id="cv-container">
+  <div id="page">
+  <div id="top-controls">
+  
     <label class="switch">
-      <input type="checkbox" id="theme-toggle" />
+      <input type="checkbox" id="theme-toggle">
       <span class="slider round"></span>
     </label>
+    <button id="export-pdf-btn">Export to PDF</button>
+  </div>
 
-    <center>
+   <center>
       <h1>Oleksandr Petrenko</h1>
       <p>Студент групи КБ-306</p>
     </center>
@@ -55,6 +59,7 @@
     <footer id="browser-info" style="margin-top: 20px; font-size: 0.85em;"></footer>
   </div>
 
+ 
   <div id="feedback-modal" class="modal">
     <div class="modal-content">
       <h2>Зворотній зв'язок</h2>
@@ -68,7 +73,8 @@
       </form>
     </div>
   </div>
-
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
